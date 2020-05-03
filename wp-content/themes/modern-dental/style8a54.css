@@ -1,0 +1,1185 @@
+/*
+Theme Name: Modern Dental 
+Author: Clocktower Media
+Author URI: http://clocktowermedia.com/
+Description: Custom Wordpress template developed especially for Modern Dental USA.
+Version: 1.0.0
+Template: dt-the7
+*/
+@import url("../dt-the7/style.css");
+
+/*******************************/
+/* Modern Dental Color Palette
+/*
+/* Light Blue - #00aeef;
+/* Dark Blue  - #234c8a;
+/* Green 	  - #68bd46;
+/* Orange  	  - #f8951d;
+/* Red 		  - #c65d4c;
+/* Grey 	  - #999999;
+/*
+/*******************************/
+
+/*-------------------------------------------------------------------------------------------*/
+/* Overrides */
+/*-------------------------------------------------------------------------------------------*/
+body {
+	background: #FFF;
+	
+}
+html, body, body.page, .wf-container > *, #main ul.products > *, .woocommerce-page #main ul.products > *, #main .woocommerce ul.products > *, #main .woocommerce-page ul.products > *, .upsells.products .products > *, .related.products .products > *, .gform_wrapper .top_label .gfield_label, textarea, input {
+font: normal normal normal 14px / 22px "Open Sans", Helvetica, Arial, Verdana, sans-serif!important;
+word-spacing: normal!important;
+color: #666666!important;
+}
+
+.home .wpb_wrapper {
+	min-height:170px;
+}
+
+/* Fancy Page Titles */
+.fancy-header .wf-td {
+	padding: 30px 0;
+}
+.fancy-header .wf-table, .page-title .wf-table {
+	border-bottom: 1px solid rgba(218,222,225,0.8);
+}
+
+.gFormInput {
+	width: 31%;
+	height: 250px;
+	float: left;
+	clear:none !important;
+	padding-right:2%
+}
+
+.gFormInput input{
+	width: 80px!important;
+}
+
+.pdf_gal {
+float: left;
+width: 360px;
+/*clear: both;*/
+}
+
+.pdf_gal a {
+float: left;
+text-align: center;
+text-decoration: none;
+font-weight: bold;
+margin-right: 15px;
+width: 100px;
+height: 170px;
+}
+/*-------------------------------------------------------------------------------------------*/
+/* General */
+/*-------------------------------------------------------------------------------------------*/
+.radial {
+	position: relative;
+}
+.rounded-edges,
+.rounded-edges.reflection:after {
+	-webkit-border-radius: 12px; 
+	-moz-border-radius: 12px;
+	-ms-border-radius: 12px; 
+	border-radius: 12px; 		
+}
+.reflection:after {
+	content: '';
+	position: absolute;
+	top: 100%;
+	margin-top: 5px;
+	left: 0;
+	width: 100%;
+	height: 100px;	
+}
+/*-------------------------------------------------------------------------------------------*/
+/* Sidebar */
+/*-------------------------------------------------------------------------------------------*/
+.sidebar-content {
+	border-radius: 0;
+	border: none;
+	background: none;
+	margin-top: 0;
+	font-weight: 600;
+}
+
+.sidebar-content .widget .menu li {
+	border: none;
+}
+/* Sidebar "Send me a Starter Kit" CTA Widget */
+.sidebar-content .widget.widget_cta img {
+	max-width: 100%;
+}
+/* Make Sidebar Extend to bottom of main container */
+#main.sidebar-right .wf-wrap .content {
+	position: relative;
+}
+/*
+#main.sidebar-right .wf-wrap .content:after {
+	content: '';
+	position: absolute;
+	width: 27%;
+	padding: 0 20px;
+	height: 100%;
+	left: 101%;
+	top: 0;
+	background: #baccce url('/wp-content/uploads/2014/03/modern-dental-logomark-large-sidebar.png') no-repeat left -170px bottom -140px;
+}
+*/
+
+/* Products Menu */
+#sidebar {
+	padding: 0 10px;
+}
+#sidebar .sidebar-content {
+	background: #baccce url('images/modern-dental-logomark-small-sidebar.png') no-repeat bottom center;
+	background-size: contain, cover;
+}
+#sidebar #modern-dental-products ul.menu {
+	overflow: hidden;
+}
+#sidebar #modern-dental-products ul.menu li {
+	margin: 0;
+	padding: 1px;
+}
+#sidebar #modern-dental-products ul.menu li a {
+	padding: 10px 0;
+	display: block;
+}
+
+.menu li, .custom-menu li, .widget_pages li, .qts-lang-menu li {
+display: block;
+position: relative;
+margin: 3px 0 0 0;
+padding: 2px 0 0 0;
+}
+
+#sidebar {
+	position: relative;
+	 }
+/*-------------------------------------------------------------------------------------------*/
+/* Header */
+/*-------------------------------------------------------------------------------------------*/
+.logo-classic-centered .navigation-holder, .logo-classic .navigation-holder, .logo-classic #main-nav > li, .logo-classic-centered #main-nav > li {
+	border: none;
+}
+#main-nav > li > a {
+	font-size: 17px;
+}
+#main-nav .sub-nav {
+	border-radius: 0;
+}
+.logo-classic #main-nav {
+	text-align: center; /* Centers Main Nav on page */
+}
+/* Toll Free Number */
+.toll-free-number p {
+	font-size: 12px;
+}
+/* My Account Button */
+#account-btn {
+	margin-right: 0;
+	padding-left: 18px;
+	padding-right: 18px;
+	background-color: #00aeef;
+}
+#main-nav > li > a {
+font: normal normal 600 15px / 23px "Open Sans", Helvetica, Arial, Verdana, sans-serif!important;
+color: #474950!important;
+text-transform: none!important;
+}
+
+/*-------------------------------------------------------------------------------------------*/
+/* Footer */
+/*-------------------------------------------------------------------------------------------*/
+/** Bottom Bar **/
+/* Social Icons */
+#bottom-bar {
+font-size: 12px;
+color: #ffffff;
+background: #000000 none repeat center top!important;
+border-top: 1px solid rgba(218,222,225,0.85);
+}
+
+#bottom-bar a, #bottom-bar .mini-nav .customSelect {
+color: #ffffff!important;
+}
+
+#bottom-bar #social-bottom {
+	padding-top: 1em;
+	float: left;
+	width: 100%;
+}
+#bottom-bar #social-bottom .soc-ico {
+	float: right;
+}
+#bottom-bar #social-bottom .soc-ico a {
+	border-color: #FFFFFF;
+	background: #FFF;
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	-ms-border-radius: 8px;
+	margin: 0 10px 0 0;
+}
+#bottom-bar #social-bottom .soc-ico a .icon {
+	fill: #000000;
+	transform: scale(1.2);
+	-webkit-transform: scale(1.2);
+	-moz-transform: scale(1.2);
+}
+/* Footer Navigation */
+#bottom-bar .copyright {
+	clear: both;
+}
+#bottom-bar .mini-nav ul {
+	position: relative;
+	z-index: 999;
+}
+#bottom-bar .mini-nav ul li {
+	float: left;
+	margin: 0;
+	padding: 0 10px;
+	border-right: 1px solid #aaa;
+}
+#bottom-bar .mini-nav li:last-of-type {
+	border-right: none;
+}
+/*-------------------------------------------------------------------------------------------*/
+/* Gradient Box CTA Grid */
+/*-------------------------------------------------------------------------------------------*/
+.categeory-grid-item {
+	float: left;
+	width: 33.3333333%;
+	padding-right: 1em;
+	box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box;
+}
+.ui-widget-content div.implants{
+	clear:both;
+}
+.categeory-grid-item.ordering-grid-item {
+	width: 50%;
+	padding: 0 3em;
+}
+.categeory-grid-item { 
+	margin-bottom: 2em;
+}
+.categeory-grid-item .category-inner {
+	padding: 1em;
+	box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box;
+	margin-bottom: 70px !important;
+	min-height: 150px;
+}
+.category-inner {
+	text-align: center;
+}
+.category-inner,
+.category-inner a {
+	display: block;
+	float: left;
+	width: 100%;
+}
+.category-inner h3 {
+	color: #FFF;
+	font-weight: 400;
+	font-size: 1.4em;
+	text-align: center;
+	width: 100%;
+}
+.categeory-grid-item .category-inner .category-main {
+	position: relative;
+	float: left;
+	width: 100%;
+	padding: 1em 0;
+}
+.categeory-grid-item .category-inner .category-image {
+	float: left;
+	width: 100%;
+	padding: 10px;
+	box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box;
+}
+/** Pop-up Product listings **/
+.categeory-grid-item .category-inner .product-category-products {
+	opacity: 0;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	max-height: 170px;
+}
+.categeory-grid-item .category-inner .category-main:hover .product-category-products {
+	opacity: 1;
+	-webkit-animation: mk_top_to_bottom 0.6s 1 cubic-bezier(0.77, 0, 0.175, 1);
+	-moz-animation: mk_top_to_bottom 0.6s 1 cubic-bezier(0.77, 0, 0.175, 1);
+	-o-animation: mk_top_to_bottom 0.6s 1 cubic-bezier(0.77, 0, 0.175, 1);
+	animation: mk_top_to_bottom 0.6s 1 cubic-bezier(0.77, 0, 0.175, 1);
+}
+.categeory-grid-item .category-inner .product-category-products ul {
+	float: left;
+	width: 100%;
+	margin: 0;
+}
+.categeory-grid-item .category-inner .product-category-products ul li {
+	float: left;
+	width: 100%;
+	background: #FFF;
+	list-style-type: none;
+	padding: 5px;
+	text-align: left;
+	margin-bottom: 2px;
+	box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box;
+	opacity: 0.9;
+}
+.categeory-grid-item .category-inner .product-category-products ul li:hover {
+	opacity: 1;
+}
+.categeory-grid-item .category-inner .product-category-products ul li a {
+	text-decoration: none;
+	font-size: 1.1em;
+	text-align: left;
+}
+.categeory-grid-item .category-inner .category-image img {
+	max-width: 100%;
+}
+.categeory-grid-item .category-description {
+	float: left;
+}
+/* Ordering Landing Page */
+body.page-template-template-ordering-landing-php .wpb_row.wf-container {
+	text-align: center;
+}
+/*-------------------------------------------------------------------------------------------*/
+/* Page Templates */
+/*-------------------------------------------------------------------------------------------*/
+/** Product Landing Page **/
+.page-template-template-product-landing-php #main {
+	padding-top: 0;
+}
+.page-template-template-product-landing-php #main #tab-container {
+	margin-top: 10px;
+}
+/* Tab Header */
+.page-template-template-product-landing-php #main .wpb_tabs,
+.page-template-template-product-landing-php #main .wpb_tabs ul.ui-tabs-nav li:before  {
+	border: none;
+}
+.page-template-template-product-landing-php #main .wpb_tabs .tab-header {
+	float: left;
+	width: 100%;
+}
+.page-template-template-product-landing-php #main .wpb_tabs .tab-header h3,
+.category-inner h3.category-title,
+.page-template-template-product-landing-php #main .wpb_tabs ul.ui-tabs-nav {
+	display: inline-block;
+	float: left;
+}
+.category-inner h3.category-title {
+	font-weight: 600;
+}
+.page-template-template-product-landing-php #main .wpb_tabs ul.ui-tabs-nav {
+	margin-left: 10px;
+	border: none;
+	min-width: 500px;
+}
+.page-template-template-product-landing-php #main .wpb_tabs ul.ui-tabs-nav li {
+	display: inline-block;
+	background: #efefef;
+	margin: 0 10px;
+	border: 1px solid #ddd;
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	-ms-border-radius: 8px;
+}
+.page-template-template-product-landing-php #main .wpb_tabs ul.ui-tabs-nav li a {
+	display: block;
+	padding: 10px 20px;
+	box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box;
+	text-decoration: none;
+	font-size: 1.4em;
+	display: block;
+	float: left;
+	width: 100%;
+	text-align: center;
+}
+/* Tab Body */
+.page-template-template-product-landing-php #main .wpb_tabs .ui-tabs-panel {
+	float: left;
+	width: 100%;
+	box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box;
+	padding: 1em 0;
+}
+/** Indication Tab **/
+#tab-indication .indication-group {
+	margin-bottom: 2em; 
+}
+#tab-indication .indication-group h3.indication-category {
+	padding: 0.5em 0.5em;
+	margin-bottom: 0;
+	background: #00aeef;
+	border-radius: 8px 8px 0 0; -webkit-border-radius: 8px 8px 0 0; -moz-border-radius: 8px 8px 0 0; -ms-border-radius: 8px 8px 0 0; 
+	box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box;
+}
+#tab-indication .indication-group h3.indication-category a {
+	color: #FFF;
+}
+#tab-indication table#indication-table th {
+	width: 33%;
+	font-size: 1.2em;
+}
+/** Individual Product Pages **/
+body.single-product .content.crown-bridge .category-title {
+	background: #d2f0fb;
+}
+
+body.single-product #product-details #tab-container,
+body.single-product #product-details .wpb_tabs_nav {
+	border: none;
+}
+body.single-product #product-details #tab-container .tab-header ul {
+	margin-left: 0;
+}
+body.single-product #product-details #tab-container .tab-header,
+body.single-product #product-details #tab-container .tab-header ul,
+body.single-product #product-details #tab-container .tab-body,
+body.single-product #product-details .wpb_tabs_nav {
+	float: left;
+	width: 100%;
+}
+body.single-product #product-details li.tab-title {
+	float: left;
+	display: inline-block;
+	background: #efefef;
+	padding: 10px;
+	margin-right: 5px;
+}
+/** Product Category SUBHEADER **/
+body.single-product #product-details li.tab-title.ui-state-active {
+	background: #bae7f8;
+}
+body.single-product #product-details li.tab-title.ui-state-active a {
+	color: #333333;
+}
+body.single-product #product-details li.tab-title a {
+	text-decoration: none;
+}
+body.single-product #product-details #tab-container .tab-body {
+	box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box;
+}
+
+/** Product Category HEADER **/
+/** Product Category HEADER **/
+/** Product Category HEADER **/
+body.tax-product_category ul#product-list .product-parent-title {
+	padding: 0.5em 0.5em;
+	margin-bottom: 0;
+	background: #00aeef;
+	border-radius: 8px 8px 0 0; -webkit-border-radius: 8px 8px 0 0; -moz-border-radius: 8px 8px 0 0; -ms-border-radius: 8px 8px 0 0; 
+	box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box;
+	color: #FFF;
+}
+body.term-dental-sleep-medicine ul#product-list .product-parent-title {
+	padding: 0.5em 0.5em;
+	margin-bottom: 0;
+	background: #f8951d;
+	border-radius: 8px 8px 0 0; -webkit-border-radius: 8px 8px 0 0; -moz-border-radius: 8px 8px 0 0; -ms-border-radius: 8px 8px 0 0; 
+	box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box;
+	color: #FFF;
+}
+body.term-removables ul#product-list .product-parent-title {
+	padding: 0.5em 0.5em;
+	margin-bottom: 0;	
+	background: #234c8a;
+	border-radius: 8px 8px 0 0; -webkit-border-radius: 8px 8px 0 0; -moz-border-radius: 8px 8px 0 0; -ms-border-radius: 8px 8px 0 0; 
+	box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box;
+	color: #FFF;
+}
+body.term-guards ul#product-list .product-parent-title {
+	padding: 0.5em 0.5em;
+	margin-bottom: 0;
+	background: #c65d4c;
+	border-radius: 8px 8px 0 0; -webkit-border-radius: 8px 8px 0 0; -moz-border-radius: 8px 8px 0 0; -ms-border-radius: 8px 8px 0 0; 
+	box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box;
+	color: #FFF;
+}
+body.term-orthodontics ul#product-list .product-parent-title {
+	padding: 0.5em 0.5em;
+	margin-bottom: 0;
+	background: #999999;
+	border-radius: 8px 8px 0 0; -webkit-border-radius: 8px 8px 0 0; -moz-border-radius: 8px 8px 0 0; -ms-border-radius: 8px 8px 0 0; 
+	box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box;
+	color: #FFF;
+}
+
+/** Product Category SUBHEADER **/
+
+.tax-product_category ol, .tax-product_category ul{ list-style: none;
+list-style-image: none; margin: 0;}
+
+body.tax-product_category ul#product-list .product-child-title h4 {
+	padding: 0.5em 0.5em;
+	margin-bottom: 0;
+	background-color: #bae7f8;
+	box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box;
+}
+body.term-dental-sleep-medicine ul#product-list .product-child-title h4 {
+	padding: 0.5em 0.5em;
+	margin-bottom: 0;
+	background-color: #f8d4a9;
+	box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box;
+}
+body.term-removables ul#product-list .product-child-title h4 {
+	padding: 0.5em 0.5em;
+	margin-bottom: 0;
+	background-color: #b9cae4;
+	box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box;
+}
+body.term-guards ul#product-list .product-child-title h4 {
+	padding: 0.5em 0.5em;
+	margin-bottom: 0;
+	background-color: #ecc0b9;
+	box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box;
+}
+body.term-orthodontics ul#product-list .product-child-title h4 {
+	padding: 0.5em 0.5em;
+	margin-bottom: 0;
+	background-color: #cccccc;
+	box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box;
+}
+
+
+body.tax-product_category ul#product-list .product-parent-title a.prod-anch {
+	display:block;
+	position:relative;
+	top:-130px;
+	height:0px;
+	width:0px;
+}
+body.tax-product_category ul#product-list .product-parent-title a {
+	color: #FFF;
+}
+/* Tabbed Navigation for Products */
+body.tax-product_category ul#product-list {
+	margin-left: 0;
+}
+/** Product Category BORDER **/
+/** Product Category BORDER **/
+/** Product Category BORDER **/
+
+body.term-crown-bridge ul#product-list .product-parent {
+	border: 2px solid #00aeef;
+	border-radius: 10px; -webkit-border-radius: 10px; -moz-border-radius: 10px;
+	margin-bottom:20px;
+}
+body.term-dental-sleep-medicine ul#product-list .product-parent {
+	border: 2px solid #f8951d;
+	border-radius: 10px; -webkit-border-radius: 10px; -moz-border-radius: 10px;
+	margin-bottom:20px;
+}
+body.term-removables ul#product-list .product-parent {
+	border: 2px solid #234c8a;
+	border-radius: 10px; -webkit-border-radius: 10px; -moz-border-radius: 10px;
+	margin-bottom:20px;
+}
+body.term-guards ul#product-list .product-parent {
+	border: 2px solid #c65d4c;
+	border-radius: 10px; -webkit-border-radius: 10px; -moz-border-radius: 10px;
+	margin-bottom:20px;
+}
+body.term-orthodontics ul#product-list .product-parent {
+	border: 2px solid #999999;
+	border-radius: 10px; -webkit-border-radius: 10px; -moz-border-radius: 10px;
+	margin-bottom:20px;
+}
+
+
+.single-product #product-details {  
+	border: 2px solid #00aeef;
+	border-radius: 10px; -webkit-border-radius: 10px; -moz-border-radius: 10px;
+	margin: 0 20px 30px 0;
+}
+
+.single-product .tab-header{
+	border-bottom: 1px solid rgba(218,222,225,0.8);
+}
+
+.single-product .ui-tabs-nav{
+	border-bottom: 1px solid rgba(218,222,225,0.8);
+	margin-bottom: 0;
+}
+
+body.tax-product_category ul#product-list #tab-container,
+body.tax-product_category ul#product-list .wpb_tabs_nav {
+	border: none;
+}
+body.tax-product_category ul#product-list #tab-container .tab-header ul {
+	margin-left: 0;
+}
+body.tax-product_category ul#product-list #tab-container .tab-header,
+body.tax-product_category ul#product-list #tab-container .tab-header ul,
+body.tax-product_category ul#product-list #tab-container .tab-body,
+body.tax-product_category ul#product-list .wpb_tabs_nav {
+	float: left;
+	width: 100%;
+}
+body.tax-product_category ul#product-list li.tab-title {
+	float: left;
+	display: inline-block;
+	background: #efefef;
+	padding: 10px;
+	margin-right: 5px;
+}
+/** Product Category SUBHEADER **/
+body.tax-product_category ul#product-list li.tab-title.ui-state-active {
+	background: #bae7f8;
+}
+body.term-dental-sleep-medicine ul#product-list li.tab-title.ui-state-active {
+	background: #f8d4a9;
+}
+
+.postid-548 #product-details li.tab-title.ui-state-active, .postid-546 #product-details li.tab-title.ui-state-active {
+background: #f8d4a9!important;
+}
+
+.postid-558 #product-details li.tab-title.ui-state-active, .postid-556 #product-details li.tab-title.ui-state-active, .postid-554 #product-details li.tab-title.ui-state-active, .postid-562 #product-details li.tab-title.ui-state-active, .postid-560 #product-details li.tab-title.ui-state-active {
+background: #b9cae4!important;
+}
+
+.postid-550 #product-details li.tab-title.ui-state-active, .postid-552 #product-details li.tab-title.ui-state-active {
+background: #ecc0b9!important;
+}
+
+.postid-691 #product-details li.tab-title.ui-state-active, .postid-570 #product-details li.tab-title.ui-state-active, .postid-568 #product-details li.tab-title.ui-state-active {
+background: #cccccc!important;
+}
+
+.postid-548 #product-details, .postid-546 #product-details {  
+	border: 2px solid #f8951d;
+}
+
+.postid-558 #product-details, .postid-556 #product-details, .postid-554 #product-details, .postid-562 #product-details, .postid-560 #product-details  {  
+	border: 2px solid #234c8a;
+}
+
+.postid-550 #product-details, .postid-552 #product-details {  
+	border: 2px solid #c65d4c;
+}
+
+.postid-691 #product-details, .postid-570 #product-details, .postid-568 #product-details {  
+	border: 2px solid #999999;
+}
+
+
+
+body.term-removables ul#product-list li.tab-title.ui-state-active {
+	background: #b9cae4;
+}
+body.term-guards ul#product-list li.tab-title.ui-state-active {
+	background: #ecc0b9;
+}
+body.term-orthodontics ul#product-list li.tab-title.ui-state-active {
+	background: #cccccc;
+}
+
+body.tax-product_category ul#product-list li.tab-title.ui-state-active a {
+	color: #333333;
+}
+body.tax-product_category ul#product-list li.tab-title a {
+	text-decoration: none;
+}
+body.tax-product_category ul#product-list #tab-container .tab-body {
+	box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box;
+}
+/** Category Navigation **/
+.category-navigation {
+	float: left;
+	width: 100%;
+	top: 100%;
+	left: 0;
+}
+.category-navigation ul {
+	float: left;
+	width: 100%;
+	margin-left: 0;
+}
+.category-navigation ul li {
+	float: left;
+	display: inline-block;
+	width: 16.66666666666667%;
+	text-align: center;
+	font-size: 1em;
+	padding: 1em;
+	box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box;
+	border-radius: 10px 10px 0 0; -webkit-border-radius: 10px 10px 0 0; -moz-border-radius: 10px 10px 0 0;
+}
+.category-navigation ul li a {
+	display: block;
+	color: #FFF;
+	text-decoration: none;
+}
+
+/*-------------------------------------------------------------------------------------------*/
+/* Other removable */
+/*-------------------------------------------------------------------------------------------*/
+
+.pad_v {
+	width: 100%;
+	clear:both;
+}
+
+.pad_v img{
+	margin-right:20px;
+}
+
+/*-------------------------------------------------------------------------------------------*/
+/* Product small buttons */
+/*-------------------------------------------------------------------------------------------*/
+
+.productButtons {
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	color:#fff;
+	min-width: 160px;
+	min-height: 38px;
+	font-size: 14px;
+	font-weight:600;
+	float:left;
+	margin-right:20px;
+	text-align:center;
+	padding-top:15px;
+	text-decoration:none;
+	}
+
+
+#certifcationButton {
+background: rgb(0,174,239); /* Old browsers */
+background: -moz-linear-gradient(left,  rgba(0,174,239,1) 0%, rgba(69,201,250,1) 51%, rgba(0,174,239,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(0,174,239,1)), color-stop(51%,rgba(69,201,250,1)), color-stop(100%,rgba(0,174,239,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(left,  rgba(0,174,239,1) 0%,rgba(69,201,250,1) 51%,rgba(0,174,239,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(left,  rgba(0,174,239,1) 0%,rgba(69,201,250,1) 51%,rgba(0,174,239,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(left,  rgba(0,174,239,1) 0%,rgba(69,201,250,1) 51%,rgba(0,174,239,1) 100%); /* IE10+ */
+background: linear-gradient(to right,  rgba(0,174,239,1) 0%,rgba(69,201,250,1) 51%,rgba(0,174,239,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00aeef', endColorstr='#00aeef',GradientType=1 ); /* IE6-9 */
+
+}
+
+
+#FixedRXButton {
+background: rgb(104,189,70); /* Old browsers */
+background: -moz-linear-gradient(left,  rgba(104,189,70,1) 0%, rgba(116,209,79,1) 49%, rgba(116,209,79,1) 49%, rgba(104,189,70,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(104,189,70,1)), color-stop(49%,rgba(116,209,79,1)), color-stop(49%,rgba(116,209,79,1)), color-stop(100%,rgba(104,189,70,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(left,  rgba(104,189,70,1) 0%,rgba(116,209,79,1) 49%,rgba(116,209,79,1) 49%,rgba(104,189,70,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(left,  rgba(104,189,70,1) 0%,rgba(116,209,79,1) 49%,rgba(116,209,79,1) 49%,rgba(104,189,70,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(left,  rgba(104,189,70,1) 0%,rgba(116,209,79,1) 49%,rgba(116,209,79,1) 49%,rgba(104,189,70,1) 100%); /* IE10+ */
+background: linear-gradient(to right,  rgba(104,189,70,1) 0%,rgba(116,209,79,1) 49%,rgba(116,209,79,1) 49%,rgba(104,189,70,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#68bd46', endColorstr='#68bd46',GradientType=1 ); /* IE6-9 */
+
+}
+
+#PDFButton {
+background: rgb(248,149,29); /* Old browsers */
+background: -moz-linear-gradient(left,  rgba(248,149,29,1) 0%, rgba(247,180,98,1) 51%, rgba(248,149,29,1) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(248,149,29,1)), color-stop(51%,rgba(247,180,98,1)), color-stop(100%,rgba(248,149,29,1))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(left,  rgba(248,149,29,1) 0%,rgba(247,180,98,1) 51%,rgba(248,149,29,1) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(left,  rgba(248,149,29,1) 0%,rgba(247,180,98,1) 51%,rgba(248,149,29,1) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(left,  rgba(248,149,29,1) 0%,rgba(247,180,98,1) 51%,rgba(248,149,29,1) 100%); /* IE10+ */
+background: linear-gradient(to right,  rgba(248,149,29,1) 0%,rgba(247,180,98,1) 51%,rgba(248,149,29,1) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8951d', endColorstr='#f8951d',GradientType=1 ); /* IE6-9 */
+}
+
+
+/*-------------------------------------------------------------------------------------------*/
+/* Homepage Slider Animation */
+/*-------------------------------------------------------------------------------------------*/
+body.home .slider-blue-text {
+	color: #00aeef;
+}
+/*-------------------------------------------------------------------------------------------*/
+/* Homepage CTA Boxes */
+/*-------------------------------------------------------------------------------------------*/
+body.home .homepage-teaser-section .wpb_text_column {
+	padding: 1em;
+	margin-bottom: 105px !important;
+	min-height: 150px;
+}
+body.home .homepage-teaser-section .wpb_text_column h2 {
+	text-align: center;
+	font-size: 21px;
+	line-height: 21px;
+	color: #FFF;
+	font-weight: 600;
+}
+body.home .homepage-teaser-section .wpb_text_column p {
+	color: #000;
+}
+body.home .homepage-teaser-section .wpb_text_column p a {
+	color: #000;
+	text-decoration: none;
+	font-weight: 600;
+	font-style: italic;
+}
+
+.imageRounded, .page-id-205 .content img, .product img {
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px; 
+	-moz-box-shadow:    2px 2px 2px 2px #ddd;
+  	-webkit-box-shadow: 2px 2px 2px 2px #ddd;
+  	box-shadow:         2px 2px 2px 2px #ddd;
+}
+
+.product-menu-toggle a{
+		text-decoration:none;
+}
+
+.product-menu-toggle a:hover{
+		text-decoration:underline;
+}
+.sidebar-content a{
+		text-decoration:none;
+		color:#000;
+		font-weight:400!important;
+}
+
+.clickableDiv {
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 210px;
+	width: 270px;
+	 }
+
+.home .grey-reflection, .home .green-reflection, .home .orange-reflection, .home .light-blue-reflection {
+	height: 210px!important;
+}
+
+.grey-reflection em, .green-reflection em, .orange-reflection em, .light-blue-reflection em{
+	font-weight: 600;
+	margin-top:10px;
+}
+
+
+/*-------------------------------------------------------------------------------------------*/
+/* Header styles to override the custom-skin css */
+/*-------------------------------------------------------------------------------------------*/
+.widget-title {
+  font-weight: 700;
+}
+
+.page-title {
+  /* removed background color  */
+  background-color: transparent;
+}
+
+.page-title:after, #main-slideshow.fixed:after, #main-slideshow.layer-fixed:after, #main-slideshow.fix:after {
+	background-color: transparent;
+}
+
+.page-title.title-left h1, .page-title.title-right h1 {
+font-size: 41px!important;
+padding-bottom: 23px!important;
+}
+h1 {
+color: #373a41!important;
+font: normal normal 300 41px / 44px "Open Sans", Helvetica, Arial, Verdana, sans-serif!important;
+text-transform: none!important;
+}
+
+#sidebar #modern-dental-products ul.toggle-open li a {
+padding: 2px 5px!important;
+}
+
+#sidebar #modern-dental-products ul.menu li a {
+padding: 2px 0;
+display: block;
+}
+
+/* The h tags are set to display:block, but when client inserts pic in our history, this creates large gap. Fixing for this page. If this is an issue on other pages, we can change this sitewide, but need to make sure this doesn't screw up other layouts */
+.page-id-11 h1, .page-id-11 h2, .page-id-11 h3, .page-id-11 h4, .page-id-11 h5 { display:inline!important;	 }
+
+
+.page-id-11 .wp-caption-text { text-align:center; }
+
+/*-------------------------------------------------------------------------------------------*/
+/* Gradients */
+/*-------------------------------------------------------------------------------------------*/
+.light-blue-radial {
+	background: #45c9fa; /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPHJhZGlhbEdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjUwJSIgY3k9IjUwJSIgcj0iNzUlIj4KICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiM0NWM5ZmEiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMDBhZWVmIiBzdG9wLW9wYWNpdHk9IjEiLz4KICA8L3JhZGlhbEdyYWRpZW50PgogIDxyZWN0IHg9Ii01MCIgeT0iLTUwIiB3aWR0aD0iMTAxIiBoZWlnaHQ9IjEwMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-radial-gradient(center, ellipse cover,  #45c9fa 0%, #00aeef 100%); /* FF3.6+ */
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#45c9fa), color-stop(100%,#00aeef)); /* Chrome,Safari4+ */
+	background: -webkit-radial-gradient(center, ellipse cover,  #45c9fa 0%,#00aeef 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-radial-gradient(center, ellipse cover,  #45c9fa 0%,#00aeef 100%); /* Opera 12+ */
+	background: -ms-radial-gradient(center, ellipse cover,  #45c9fa 0%,#00aeef 100%); /* IE10+ */
+	background: radial-gradient(ellipse at center,  #45c9fa 0%,#00aeef 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#45c9fa', endColorstr='#00aeef',GradientType=1 ); /* IE6-8 fallback on horizontal gradient */
+}
+	.light-blue-reflection:after {
+		/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+		background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzAwYWVlZiIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjU1JSIgc3RvcC1jb2xvcj0iIzAwYWVlZiIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMwMGFlZWYiIHN0b3Atb3BhY2l0eT0iMCIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+		background: -moz-linear-gradient(top,  rgba(0,174,239,1) 0%, rgba(0,174,239,0) 55%, rgba(0,174,239,0) 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,174,239,1)), color-stop(55%,rgba(0,174,239,0)), color-stop(100%,rgba(0,174,239,0))); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top,  rgba(0,174,239,1) 0%,rgba(0,174,239,0) 55%,rgba(0,174,239,0) 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top,  rgba(0,174,239,1) 0%,rgba(0,174,239,0) 55%,rgba(0,174,239,0) 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top,  rgba(0,174,239,1) 0%,rgba(0,174,239,0) 55%,rgba(0,174,239,0) 100%); /* IE10+ */
+		background: linear-gradient(to bottom,  rgba(0,174,239,1) 0%,rgba(0,174,239,0) 55%,rgba(0,174,239,0) 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00aeef', endColorstr='#0000aeef',GradientType=0 ); /* IE6-8 */
+	}
+.green-radial {
+	background: #74d14f; /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPHJhZGlhbEdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjUwJSIgY3k9IjUwJSIgcj0iNzUlIj4KICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiM3NGQxNGYiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjNjhiZDQ2IiBzdG9wLW9wYWNpdHk9IjEiLz4KICA8L3JhZGlhbEdyYWRpZW50PgogIDxyZWN0IHg9Ii01MCIgeT0iLTUwIiB3aWR0aD0iMTAxIiBoZWlnaHQ9IjEwMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-radial-gradient(center, ellipse cover,  #74d14f 0%, #68bd46 100%); /* FF3.6+ */
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#74d14f), color-stop(100%,#68bd46)); /* Chrome,Safari4+ */
+	background: -webkit-radial-gradient(center, ellipse cover,  #74d14f 0%,#68bd46 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-radial-gradient(center, ellipse cover,  #74d14f 0%,#68bd46 100%); /* Opera 12+ */
+	background: -ms-radial-gradient(center, ellipse cover,  #74d14f 0%,#68bd46 100%); /* IE10+ */
+	background: radial-gradient(ellipse at center,  #74d14f 0%,#68bd46 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#74d14f', endColorstr='#68bd46',GradientType=1 ); /* IE6-8 fallback on horizontal gradient */
+}
+	.green-reflection:after {
+		/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+		background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzY4YmQ0NSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjU1JSIgc3RvcC1jb2xvcj0iIzZmYzg0YiIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiM3NGQxNGYiIHN0b3Atb3BhY2l0eT0iMCIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+		background: -moz-linear-gradient(top,  rgba(104,189,69,1) 0%, rgba(111,200,75,0) 55%, rgba(116,209,79,0) 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(104,189,69,1)), color-stop(55%,rgba(111,200,75,0)), color-stop(100%,rgba(116,209,79,0))); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top,  rgba(104,189,69,1) 0%,rgba(111,200,75,0) 55%,rgba(116,209,79,0) 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top,  rgba(104,189,69,1) 0%,rgba(111,200,75,0) 55%,rgba(116,209,79,0) 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top,  rgba(104,189,69,1) 0%,rgba(111,200,75,0) 55%,rgba(116,209,79,0) 100%); /* IE10+ */
+		background: linear-gradient(to bottom,  rgba(104,189,69,1) 0%,rgba(111,200,75,0) 55%,rgba(116,209,79,0) 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#68bd45', endColorstr='#0074d14f',GradientType=0 ); /* IE6-8 */
+	}
+.orange-radial {
+	background: #f7b462; /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPHJhZGlhbEdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjUwJSIgY3k9IjUwJSIgcj0iNzUlIj4KICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNmN2I0NjIiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjZjg5NTFkIiBzdG9wLW9wYWNpdHk9IjEiLz4KICA8L3JhZGlhbEdyYWRpZW50PgogIDxyZWN0IHg9Ii01MCIgeT0iLTUwIiB3aWR0aD0iMTAxIiBoZWlnaHQ9IjEwMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-radial-gradient(center, ellipse cover,  #f7b462 0%, #f8951d 100%); /* FF3.6+ */
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#f7b462), color-stop(100%,#f8951d)); /* Chrome,Safari4+ */
+	background: -webkit-radial-gradient(center, ellipse cover,  #f7b462 0%,#f8951d 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-radial-gradient(center, ellipse cover,  #f7b462 0%,#f8951d 100%); /* Opera 12+ */
+	background: -ms-radial-gradient(center, ellipse cover,  #f7b462 0%,#f8951d 100%); /* IE10+ */
+	background: radial-gradient(ellipse at center,  #f7b462 0%,#f8951d 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f7b462', endColorstr='#f8951d',GradientType=1 ); /* IE6-8 fallback on horizontal gradient */	
+}
+	.orange-reflection:after {
+		/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+		background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2Y4OTUxZCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjU1JSIgc3RvcC1jb2xvcj0iI2Y3YTY0MyIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmN2I0NjIiIHN0b3Atb3BhY2l0eT0iMCIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+		background: -moz-linear-gradient(top,  rgba(248,149,29,1) 0%, rgba(247,166,67,0) 55%, rgba(247,180,98,0) 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(248,149,29,1)), color-stop(55%,rgba(247,166,67,0)), color-stop(100%,rgba(247,180,98,0))); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top,  rgba(248,149,29,1) 0%,rgba(247,166,67,0) 55%,rgba(247,180,98,0) 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top,  rgba(248,149,29,1) 0%,rgba(247,166,67,0) 55%,rgba(247,180,98,0) 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top,  rgba(248,149,29,1) 0%,rgba(247,166,67,0) 55%,rgba(247,180,98,0) 100%); /* IE10+ */
+		background: linear-gradient(to bottom,  rgba(248,149,29,1) 0%,rgba(247,166,67,0) 55%,rgba(247,180,98,0) 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f8951d', endColorstr='#00f7b462',GradientType=0 ); /* IE6-8 */	
+	}
+.dark-blue-radial {
+	background: #3d67a6; /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPHJhZGlhbEdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjUwJSIgY3k9IjUwJSIgcj0iNzUlIj4KICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiMzZDY3YTYiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjMjM0YzhhIiBzdG9wLW9wYWNpdHk9IjEiLz4KICA8L3JhZGlhbEdyYWRpZW50PgogIDxyZWN0IHg9Ii01MCIgeT0iLTUwIiB3aWR0aD0iMTAxIiBoZWlnaHQ9IjEwMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-radial-gradient(center, ellipse cover,  #3d67a6 0%, #234c8a 100%); /* FF3.6+ */
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#3d67a6), color-stop(100%,#234c8a)); /* Chrome,Safari4+ */
+	background: -webkit-radial-gradient(center, ellipse cover,  #3d67a6 0%,#234c8a 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-radial-gradient(center, ellipse cover,  #3d67a6 0%,#234c8a 100%); /* Opera 12+ */
+	background: -ms-radial-gradient(center, ellipse cover,  #3d67a6 0%,#234c8a 100%); /* IE10+ */
+	background: radial-gradient(ellipse at center,  #3d67a6 0%,#234c8a 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3d67a6', endColorstr='#234c8a',GradientType=1 ); /* IE6-8 fallback on horizontal gradient */
+}
+	.dark-blue-reflection:after {
+		/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+		background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzIzNGM4YSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjU1JSIgc3RvcC1jb2xvcj0iIzMxNWI5OSIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiMzZDY3YTYiIHN0b3Atb3BhY2l0eT0iMCIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+		background: -moz-linear-gradient(top,  rgba(35,76,138,1) 0%, rgba(49,91,153,0) 55%, rgba(61,103,166,0) 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(35,76,138,1)), color-stop(55%,rgba(49,91,153,0)), color-stop(100%,rgba(61,103,166,0))); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top,  rgba(35,76,138,1) 0%,rgba(49,91,153,0) 55%,rgba(61,103,166,0) 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top,  rgba(35,76,138,1) 0%,rgba(49,91,153,0) 55%,rgba(61,103,166,0) 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top,  rgba(35,76,138,1) 0%,rgba(49,91,153,0) 55%,rgba(61,103,166,0) 100%); /* IE10+ */
+		background: linear-gradient(to bottom,  rgba(35,76,138,1) 0%,rgba(49,91,153,0) 55%,rgba(61,103,166,0) 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#234c8a', endColorstr='#003d67a6',GradientType=0 ); /* IE6-8 */
+	}
+.red-radial {
+	background: #de8071; /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPHJhZGlhbEdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjUwJSIgY3k9IjUwJSIgcj0iNzUlIj4KICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNkZTgwNzEiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjYzY1ZDRjIiBzdG9wLW9wYWNpdHk9IjEiLz4KICA8L3JhZGlhbEdyYWRpZW50PgogIDxyZWN0IHg9Ii01MCIgeT0iLTUwIiB3aWR0aD0iMTAxIiBoZWlnaHQ9IjEwMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-radial-gradient(center, ellipse cover,  #de8071 0%, #c65d4c 100%); /* FF3.6+ */
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#de8071), color-stop(100%,#c65d4c)); /* Chrome,Safari4+ */
+	background: -webkit-radial-gradient(center, ellipse cover,  #de8071 0%,#c65d4c 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-radial-gradient(center, ellipse cover,  #de8071 0%,#c65d4c 100%); /* Opera 12+ */
+	background: -ms-radial-gradient(center, ellipse cover,  #de8071 0%,#c65d4c 100%); /* IE10+ */
+	background: radial-gradient(ellipse at center,  #de8071 0%,#c65d4c 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#de8071', endColorstr='#c65d4c',GradientType=1 ); /* IE6-8 fallback on horizontal gradient */
+}
+	.red-reflection:after {
+		/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+		background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2M2NWQ0YyIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjU1JSIgc3RvcC1jb2xvcj0iI2QzNzA2MCIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNkZTgwNzEiIHN0b3Atb3BhY2l0eT0iMCIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+		background: -moz-linear-gradient(top,  rgba(198,93,76,1) 0%, rgba(211,112,96,0) 55%, rgba(222,128,113,0) 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(198,93,76,1)), color-stop(55%,rgba(211,112,96,0)), color-stop(100%,rgba(222,128,113,0))); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top,  rgba(198,93,76,1) 0%,rgba(211,112,96,0) 55%,rgba(222,128,113,0) 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top,  rgba(198,93,76,1) 0%,rgba(211,112,96,0) 55%,rgba(222,128,113,0) 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top,  rgba(198,93,76,1) 0%,rgba(211,112,96,0) 55%,rgba(222,128,113,0) 100%); /* IE10+ */
+		background: linear-gradient(to bottom,  rgba(198,93,76,1) 0%,rgba(211,112,96,0) 55%,rgba(222,128,113,0) 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c65d4c', endColorstr='#00de8071',GradientType=0 ); /* IE6-8 */
+	}
+.grey-radial {
+	background: #b4b4b4; /* Old browsers */
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPHJhZGlhbEdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgY3g9IjUwJSIgY3k9IjUwJSIgcj0iNzUlIj4KICAgIDxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNiNGI0YjQiIHN0b3Atb3BhY2l0eT0iMSIvPgogICAgPHN0b3Agb2Zmc2V0PSIxMDAlIiBzdG9wLWNvbG9yPSIjOTk5OTk5IiBzdG9wLW9wYWNpdHk9IjEiLz4KICA8L3JhZGlhbEdyYWRpZW50PgogIDxyZWN0IHg9Ii01MCIgeT0iLTUwIiB3aWR0aD0iMTAxIiBoZWlnaHQ9IjEwMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -moz-radial-gradient(center, ellipse cover,  #b4b4b4 0%, #999999 100%); /* FF3.6+ */
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#b4b4b4), color-stop(100%,#999999)); /* Chrome,Safari4+ */
+	background: -webkit-radial-gradient(center, ellipse cover,  #b4b4b4 0%,#999999 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-radial-gradient(center, ellipse cover,  #b4b4b4 0%,#999999 100%); /* Opera 12+ */
+	background: -ms-radial-gradient(center, ellipse cover,  #b4b4b4 0%,#999999 100%); /* IE10+ */
+	background: radial-gradient(ellipse at center,  #b4b4b4 0%,#999999 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b4b4b4', endColorstr='#999999',GradientType=1 ); /* IE6-8 fallback on horizontal gradient */
+}
+	.grey-reflection:after {
+		/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+		background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzk5OTk5OSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjU1JSIgc3RvcC1jb2xvcj0iI2E4YThhOCIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNiNGI0YjQiIHN0b3Atb3BhY2l0eT0iMCIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+		background: -moz-linear-gradient(top,  rgba(153,153,153,1) 0%, rgba(168,168,168,0) 55%, rgba(180,180,180,0) 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(153,153,153,1)), color-stop(55%,rgba(168,168,168,0)), color-stop(100%,rgba(180,180,180,0))); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(top,  rgba(153,153,153,1) 0%,rgba(168,168,168,0) 55%,rgba(180,180,180,0) 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(top,  rgba(153,153,153,1) 0%,rgba(168,168,168,0) 55%,rgba(180,180,180,0) 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(top,  rgba(153,153,153,1) 0%,rgba(168,168,168,0) 55%,rgba(180,180,180,0) 100%); /* IE10+ */
+		background: linear-gradient(to bottom,  rgba(153,153,153,1) 0%,rgba(168,168,168,0) 55%,rgba(180,180,180,0) 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#999999', endColorstr='#00b4b4b4',GradientType=0 ); /* IE6-8 */		
+	}
+/*-------------------------------------------------------------------------------------------*/
+/* Responsive */
+/*-------------------------------------------------------------------------------------------*/
+@media all and (max-width: 1200px) {
+
+	.category-inner h3 {
+		font-size: 1em;
+	}
+	/* Category Tabs */
+	.category-navigation ul li {
+		width: 33%;
+		border-radius: 0;
+	}
+
+}
+
+@media screen and (max-width: 1024px) {
+	
+	.ui-widget-content div.implants{
+		clear:none;
+	}
+	.ui-widget-content div.guards{
+		clear:both;
+	}
+	.ui-widget-content div.orthodontics{
+		clear:both;
+	}
+
+}
+
+@media all and (max-width: 979px) {
+
+	/* General */
+	#main.sidebar-right .wf-wrap .sidebar-content {
+		background: #baccce;
+	}
+	#main.sidebar-right .wf-wrap .content:after {
+		display: none;
+	}	
+	.categeory-grid-item {
+		width: 50%;
+	}
+	.categeory-grid-item.ordering-grid-item {
+		width: 50%;
+		padding: 0 1em;
+	}
+	.category-inner h3 {
+		font-size: 1.2em;
+	}
+
+}
+
+@media screen and (max-width: 760px) {
+	
+	/* General */
+	.sidebar-right .sidebar, 
+	.sidebar-left .sidebar {
+		padding-top: 0;
+	}
+	/* Page Title Section */
+	#fancy-header .wf-wrap {
+		width: 100%;
+		box-sizing: border-box; -webkit-box-sizing: border-box; -moz-box-sizing: border-box;
+	}
+	.reflection:after {
+		display: none;
+	}
+	.fancy-header .breadcrumbs.wf-td {
+		padding: 10px 0 20px;
+	}
+	/* Product Landing Page */
+	.categeory-grid-item .category-inner {
+		margin-bottom: 20px !important;
+	}	
+	/* Homepage Teaser Section */
+	body.home .homepage-teaser-section .wpb_text_column {
+		padding: 1em;
+		margin-bottom: 20px !important;
+		min-height: 100%;
+	}
+	.wf-mobile-visible {
+		display: block;
+		margin-bottom: 1em;
+	}
+	/* Footer */
+	#bottom-bar #social-bottom {
+		padding: 1em 0;
+	}
+	#bottom-bar #social-bottom .soc-ico {
+		float: none;
+		display: table;
+		margin: 0 auto;
+	}
+	#bottom-bar #social-bottom .soc-ico a {
+		display: table-cell;
+	}			
+
+}
+
+#mosesImg { width: 340px; }
+
+
+@media all and (max-width: 480px) {
+
+	.categeory-grid-item,
+	.categeory-grid-item.ordering-grid-item {
+		width: 100%;
+	}
+	/* Category Tabs */
+	.category-navigation ul li {
+		width: 50%;
+	}
+	
+	.gFormInput {
+		height: 300px;
+	}
+	
+	.pdf_gal a {
+		margin-right: 10px;
+		width: 90px;
+	}
+	#mosesImg { width: 300px; }
+	
+	.pdf_gal {
+	float: left;
+	width: 320px;
+	/*clear: both;*/
+	}
+}
+
+@media all and (max-width: 320px) {
+
+	/* Category Tabs */
+	.category-navigation ul li {
+		width: 100%;
+	}
+
+}
+
+
